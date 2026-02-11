@@ -1,0 +1,100 @@
+@import url("normalize.css");
+
+:root {
+  --bg: #f5f7fb;
+  --panel: #ffffff;
+  --text: #101828;
+  --muted: #667085;
+  --line: rgba(16, 24, 40, .08);
+  --shadow: 0 10px 30px rgba(16, 24, 40, .08);
+  --shadow2: 0 6px 18px rgba(16, 24, 40, .08);
+  --blue: #2f6bff;
+  --blue2: #4aa3ff;
+  --ok: #12b76a;
+  --danger: #f04438;
+
+  --radius: 16px;
+  --radius2: 14px;
+
+  --bg-image: url("./assets/images/login_bg.png");
+  --logo-image: url("./assets/images/logo.png");
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.text-overflow-1 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.text-overflow-2 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+body {
+  margin: 0;
+  font-family: ui-sans-serif, system-ui, -apple-system, "PingFang SC", "Microsoft Yahei", Arial, sans-serif;
+  color: var(--text);
+}
+
+/* 顶栏 */
+.topbar {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    backdrop-filter: blur(10px);
+    background: rgba(245, 247, 251, .72);
+    border-bottom: 1px solid var(--line);
+}
+
+.topbar__inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 12px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-width: 220px;
+}
+
+.brand__logo {
+    width: 38px;
+    height: 38px;
+    border-radius: 12px;
+    background-image: var(--logo-image);
+    background-size: cover;
+    display: grid;
+    place-items: center;
+    box-shadow: var(--shadow2);
+    position: relative;
+    overflow: hidden;
+}
+
+.brand__text {
+    line-height: 1.1;
+}
+
+.brand__title {
+    font-weight: 800;
+    letter-spacing: .4px;
+}
+
+.brand__sub {
+    font-size: 12px;
+    color: var(--muted);
+    margin-top: 2px;
+}
