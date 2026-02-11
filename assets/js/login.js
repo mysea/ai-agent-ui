@@ -17,6 +17,6 @@ form.addEventListener("submit", (e) => {
     if (password.length < 6) return tip.textContent = "密码至少 6 位";
 
     setTimeout(() => {
-        location.href = "/index.html";
+        location.href = "./index.html";
     }, 500);
 });

@@ -245,7 +245,7 @@ btnChangePwd.addEventListener("click", () => {
 });
 btnLogout.addEventListener("click", () => {
     closeUserMenu();
-    location.href = "/login.html";
+    location.href = "./login.html";
 });
 
 pwdModal.addEventListener("click", (e) => {
