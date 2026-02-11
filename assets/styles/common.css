@@ -16,8 +16,8 @@
   --radius: 16px;
   --radius2: 14px;
 
-  --bg-image: url("./assets/images/login_bg.png");
-  --logo-image: url("./assets/images/logo.png");
+  --bg-image: url("../images/login_bg.png");
+  --logo-image: url("../images/logo.png");
 }
 
 * {

@@ -121,12 +121,12 @@ function render() {
                 <p class="card__desc text-overflow-2">${escapeHTML(a.desc)}</p>
                 <div class="card__foot">
                     <div class="heat">
-                        <img src="./assets/icons/hot.png" class="heat__img" aria-hidden="true"></img>
+                        <img src="assets/icons/hot.png" class="heat__img" aria-hidden="true"></img>
                         <span class="heat__num">${a.hot}</span>
                     </div>
                     <div class="source">
                         <span>来源：${escapeHTML(a.source)}</span>
-                        <img src="./assets/icons/more.png" class="heat__img" aria-hidden="true"></img>
+                        <img src="assets/icons/more.png" class="heat__img" aria-hidden="true"></img>
                     </div>
                 </div>
             </article>
